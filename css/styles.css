@@ -30,14 +30,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 300vh;
+  height: 600vh;
 }
 
 .nav-bar {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   font-size: 0.5rem;
   margin-bottom: 2rem;
+  border-bottom: 1px solid black;
 }
 
 .nav-button {
@@ -46,10 +48,6 @@ body {
   background-color: transparent;
   margin: 0px;
   padding: 7px;
-}
-
-header {
-  border-bottom: 1px solid black;
 }
 
 h2 {
@@ -153,6 +151,66 @@ article {
 .bio h2 {
   display: flex;
   flex-direction: column;
+}
+
+.popular .img {
+  width: 80%;
+}
+
+.popular p {
+  font-size: 0.5rem;
+  font-style: italic;
+  padding: 0;
+  border-top: none;
+}
+
+.latest img {
+  width: 25%;
+  height: 15vh;
+}
+
+.insta-posts img {
+  width: 45%;
+}
+
+.imagebar img {
+  width: 10%;
+  margin: 0;
+}
+
+footer p {
+  padding: 1rem 0 1rem 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+footer button {
+  float: right;
+  background-color: #d27256;
+  color: white;
+}
+
+.latest {
+  display: flex;
+  flex-flow: column wrap;
+  height: 15vh;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.latest p {
+  font-size: 0.5rem;
+  font-style: italic;
+  padding: 0;
+  border-top: none;
+}
+
+article img {
+  height: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
