@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 
+Lato regular text?  font-family: 'Lato', sans-serif; body
+Oswald for headlines?  font-family: 'Oswald', sans-serif; headers
+playfair for ?  Bylines, maybe  font-family: 'Playfair Display', serif;
+    some headings.  Look for serifs.
+    font-family: 'Roboto', serif;
+
+element background-color: ffffff
+*/
+img {
+  width: 100%;
+}
+
+html {
+  background-color: #f4f4f4;
+}
+
+body {
+  width: 79%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 300vh;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav-button {
+  font-family: "Lato", sans-serif;
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 7px;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+article p {
+  font-size: 0.75rem;
+  padding: 2rem;
+}
+
+.social-media-button {
+  font-size: 0.5rem;
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 4px;
+}
+
+article {
+  background-color: white;
+}
+
+.main-content {
+  width: 66%;
+}
+
+.sidebar-content {
+  width: 30%;
+}
+
+.category {
+  color: #d27256;
+  font-size: 0.5rem;
+  text-align: center;
+  margin: 5px 0px 1rem 0px;
+  padding: 0px;
+}
+
+.button-read-more {
+  color: #d27256;
+  border: 1px solid #d27256;
+  background-color: white;
+  font-weight: bold;
+  align-self: center;
+  font-size: 0.5rem;
+  padding: 5px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px black solid;
+  opacity: 0.5;
+  margin-top: 0.5rem;
+  align-items: baseline;
+}
+
+.tagline p {
+  font-size: 0.5rem;
+  font-style: italic;
+  padding: 0;
+  border-top: none;
+}
+
+.tagline .social-media-button {
+  font-size: 0.5rem;
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+}
+
+.bio-photo {
+  width: 125px;
+  height: 125px;
+  border-radius: 90px;
+  border: white 5px solid;
+  position: absolute;
+  right: 25%;
+  bottom: 33%;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  position: relative;
+}
+
+.bio-backdrop {
+  margin-bottom: 3rem;
+}
+
+.bio h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=styles.css.map */
