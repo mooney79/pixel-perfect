@@ -10,6 +10,8 @@ playfair for ?  Bylines, maybe  font-family: 'Playfair Display', serif;
     font-family: 'Roboto', serif;
 
 element background-color: ffffff
+first pic: 894x 585
+
 */
 img {
   width: 100%;
@@ -20,9 +22,13 @@ html {
 }
 
 body {
-  width: 79%;
-  margin: 0 auto;
   font-family: "Lato", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .wrapper {
@@ -38,8 +44,8 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 0.5rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid black;
+  margin-bottom: 2.7rem;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .nav-button {
@@ -47,7 +53,7 @@ body {
   border: none;
   background-color: transparent;
   margin: 0px;
-  padding: 7px;
+  padding: 2px 19px 0px 0px;
 }
 
 h2 {
@@ -72,6 +78,11 @@ article p {
 
 article {
   background-color: white;
+  margin-bottom: 2rem;
+}
+
+article img {
+  height: 585px;
 }
 
 .main-content {
@@ -109,7 +120,7 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px black solid;
+  border-top: 1px #eaeaea solid;
   opacity: 0.5;
   margin-top: 0.5rem;
   align-items: baseline;
@@ -138,6 +149,7 @@ article {
   right: 25%;
   bottom: 33%;
   margin-bottom: 1.5rem;
+  object-fit: cover;
 }
 
 .bio {
@@ -146,6 +158,7 @@ article {
 
 .bio-backdrop {
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .bio h2 {
@@ -167,14 +180,20 @@ article {
 .latest img {
   width: 25%;
   height: 15vh;
+  object-fit: cover;
 }
 
 .insta-posts img {
   width: 45%;
 }
 
+.imagebar {
+  display: flex;
+  overflow: hidden;
+}
+
 .imagebar img {
-  width: 10%;
+  width: 13%;
   margin: 0;
 }
 
@@ -182,14 +201,17 @@ footer p {
   padding: 1rem 0 1rem 0;
   margin: 0 auto;
   text-align: center;
-  background-color: black;
   color: white;
+  background-color: black;
 }
 
-footer button {
-  float: right;
+.black-bar > button {
   background-color: #d27256;
   color: white;
+  position: absolute;
+  top: 0;
+  right: 2vw;
+  z-index: 5;
 }
 
 .latest {
@@ -211,6 +233,112 @@ h3 {
 
 article img {
   height: 300px;
+}
+
+.black-bar {
+  background-color: black;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.popular-posts {
+  background-color: white;
+}
+
+.popular {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10% 0px 10%;
+}
+
+.popular h3 {
+  font-size: 12px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.popular p {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 0.5rem;
+}
+
+.bio h3 {
+  text-align: center;
+}
+
+.bio-social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.bio {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.bio p {
+  font-size: 12px;
+}
+
+.latest-posts {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  margin-top: 1rem;
+}
+
+.latest {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.latest:last-child {
+  border-bottom: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.latest h3 {
+  font-size: 8px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.latest img {
+  margin-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.insta-posts {
+  background-color: white;
+}
+
+.insta-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.insta-photos img {
+  width: 40%;
+  margin-bottom: 0.5rem;
+}
+
+article, .latest-posts, .popular-posts, .insta-posts {
+  border: 1px solid #eaeaea;
 }
 
 /*# sourceMappingURL=styles.css.map */
