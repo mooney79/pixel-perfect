@@ -24,6 +24,8 @@ Oswald for headlines?  font-family: 'Oswald', sans-serif; headers
 playfair for ?  Bylines, maybe  font-family: 'Playfair Display', serif;
     some headings.  Look for serifs.
     font-family: 'Roboto', serif;
+    0.707/175%
+
 */
 /* NAVIGATION BAR */
 .nav-bar {
@@ -404,7 +406,11 @@ article .text {
   font-size: 0.6rem;
 }
 
-/* UNSORTED HELLSCAPE BELOW */
+/* RANDOM STYLING */
+button:hover {
+  transform: scale(1.25);
+}
+
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.25rem;
@@ -413,6 +419,42 @@ h2 {
 
 h3 {
   font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .main-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 1080vh;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .tagline-social-media {
+    width: 40%;
+  }
+
+  .sidebar-content {
+    width: 100%;
+  }
+
+  .bio-photo {
+    right: 33%;
+  }
+
+  .imagebar {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .imagebar img {
+    width: 28%;
+    height: 140px;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
